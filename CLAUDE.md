@@ -313,9 +313,7 @@ SUPABASE_SERVICE_ROLE_KEY=<in .env.local — migration scripts only, never expos
 
 1. **Next.js 16 middleware deprecation**: Warning says to use "proxy" instead of "middleware". Works fine for now but should migrate eventually.
 2. **No git repo initialized**: Need to `git init`, add `.gitignore`, and push to GitHub.
-3. **Login only supports magic link**: The test user has a password set but the login page only has OTP flow. Add `signInWithPassword` option or a dev-only password login.
-4. **No error boundaries**: Need React error boundaries for the comms components.
-5. **Default Next.js homepage**: `src/app/page.tsx` is still the create-next-app boilerplate. Should redirect to `/comms` or show a landing page.
+3. **No error boundaries**: Need React error boundaries for the comms components.
 
 ---
 
