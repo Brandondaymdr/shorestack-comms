@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  --deep-ocean: #1B4965;
+  --shore-sand: #F5F0E8;
+  --seafoam: #5FA8A0;
+  --driftwood: #A68B6B;
+  --sunset-coral: #E07A5F;
+  --deep-slate: #2D3436;
+}
+
+@theme inline {
+  --color-deep-ocean: var(--deep-ocean);
+  --color-shore-sand: var(--shore-sand);
+  --color-seafoam: var(--seafoam);
+  --color-driftwood: var(--driftwood);
+  --color-sunset-coral: var(--sunset-coral);
+  --color-deep-slate: var(--deep-slate);
+  --font-sans: var(--font-dm-sans);
+  --font-mono: var(--font-dm-mono);
+}
+
+body {
+  background: var(--shore-sand);
+  color: var(--deep-slate);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+/* Scrollbar styling for chat feeds */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: var(--driftwood);
+  border-radius: 3px;
+}
